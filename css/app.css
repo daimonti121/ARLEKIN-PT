@@ -914,8 +914,8 @@
       img.mon-r {
         display: block;
         right: 1%;
-        top: calc(56%);
-        max-width: 42vw;
+        top: calc(50%);
+        max-width: 48vw;
     }
   }
   
