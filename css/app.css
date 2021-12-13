@@ -867,15 +867,16 @@
      img.mon-b {
         max-width: 86vw;
         left: calc(50% - 43vw / 1);
+        z-index: 100;
      }
 
      
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
   
       #click {
-          top: 35%;
+          top: 30%;
       }
   
       .kakadu {
@@ -889,6 +890,33 @@
       .btn-2 {
           font-size: 14px;
       }
+
+      img.mon-r-t {
+          display: none;
+      }
+
+      .logo {
+        top: 30px;
+      }
+
+      .circle {
+        top: -25%;
+      }
+
+      img.mon-l {
+        right: 0%;
+        left: 4%;
+        top: calc(68%);
+        max-width: 53vw;
+        display: block;
+      }
+
+      img.mon-r {
+        display: block;
+        right: 1%;
+        top: calc(56%);
+        max-width: 42vw;
+    }
   }
   
   @media (max-width: 350px) {
@@ -929,11 +957,15 @@
 
     .circle {
         transform: scale(0.5);
-        top: 0%;
+        top: -16%;
     }
 
     .logo {
         margin-bottom: 4vh;
+    }
+
+    .logo {
+        top: 30px;
     }
 
   }
@@ -943,13 +975,13 @@
     .logo {
         position: absolute;
         width: 200px;        
-        top: 110px;
+        top: 30px;
         left: 64px;
     }
 
     .circle {
-        transform: scale(0.5);
-        top: 0%;
+        transform: scale(0.49);
+        top: -11%;
     }
 
     .popupImg {
@@ -980,6 +1012,7 @@
       }
 
       .logo {
+        top: 30px;
         left: 20px;
       }
 
@@ -992,6 +1025,7 @@
       .popupImg {
           display: none;
       }
+      
   }
 
 
@@ -1002,8 +1036,7 @@
         transform: scale(0.6);
     }
     
-    .logo {
-        top: 110px;
+    .logo {        
         margin-bottom: 20vh;
     }
   }
