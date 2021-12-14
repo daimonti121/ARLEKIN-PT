@@ -209,12 +209,13 @@ $('.btn-1').click(function(){
 })
 
 function $_GET(e,t){return!!(t=t.match(new RegExp(e+"=([^&=]+)")))&&t[1]}
+var getStag = $_GET("stag", window.location.href);
+ var stag = "?stag=" + getStag;
+console.log("STAG -" + stag);
 
-$('.btn-2').click(function(){
-  var getStag = $_GET("stag", window.location.href);
-  var stag = "?stag=" + getStag;
-  console.log("STAG -" + stag);
-  window.location.href = 'https://www.arlekincasino.com/pt/users/sign_up' + stag;
+
+$('.btn-2').click(function(){     
+    window.location.href = 'https://www.arlekincasino.com/pt/users/sign_up' + stag;
 })
 
 function easeOut(t, b, c, d) {
