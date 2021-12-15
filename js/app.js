@@ -205,7 +205,6 @@ $('.btn-1').click(function(){
   $('body').addClass('two')
   $('button.carousel__button.is-close').trigger('click')
   spin()
-
 })
 
 function $_GET(e,t){return!!(t=t.match(new RegExp(e+"=([^&=]+)")))&&t[1]}
