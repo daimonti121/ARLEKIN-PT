@@ -914,8 +914,8 @@
       img.mon-r {
         display: block;
         right: 1%;
-        top: calc(50%);
-        max-width: 48vw;
+        top: calc(58%);
+        max-width: 38vw;
     }
   }
   
@@ -932,6 +932,20 @@
       .logo img {
           width: 280px;
       }
+
+      img.mon-l {
+        right: 0%;
+        left: 12%;
+        top: calc(73%);
+        max-width: 40vw;
+    }
+
+      img.mon-r {
+        display: block;
+        right: 10%;
+        top: calc(64%);
+        max-width: 30vw;
+    }
   }
 
   @media (max-width: 290px) {
