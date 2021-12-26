@@ -24,14 +24,14 @@
 <body>
     <div class="wrapper">
         <input type="button" id="click" value="spin" style="float:left;" onclick="spin();" />
-        <img class="wrapper__background-img" src="img/wheelBg.jpg" alt="background">
+        <img class="wrapper__background-img" src="img/wheelBg.webp" alt="background">
         <div class="bg">
             <div class="monetki-images">
-                <img src="img/Harly.spine.gif" alt="harley" class="mon-r">
+                <img src="img/Harly.spine.webp" alt="harley" class="mon-r">
                 <img src="img/monetki-b.png" alt="monetki" class="mon-b">
                 <img src="img/monetki-r-t.png" alt="monetki" class="mon-r-t">
                 <img src="img/monetki-c-t.png" alt="monetki" class="c-t">
-                <img src="img/elvis.png" alt="elvis" class="mon-l">
+                <img src="img/elvis.webp" alt="elvis" class="mon-l">
             </div>
         </div>
         <div class="fon">
@@ -84,26 +84,26 @@
             </div>
         </div>
     </div>
-    <button data-fancybox data-src="#animatedModal" class="none this"></button>
+    <button data-fancybox data-modal="true" data-src="#animatedModal" class="none this"></button>
     <div class="wrapper-popup none" >
         <div id="animatedModal" class="none">
             <div class="text1">Parabéns!</div>
             <div class="text2">Ganhou <span> 100 Rodadas Grátis</span>! Tente obter mais!</div>
-            <div class="btn btn-1">Rodar</div>
+            <div class="btn btn-1" data-fancybox-close>Rodar</div>
         </div>
     </div>
-    <button data-fancybox data-src="#animatedModal2" class="none this2"></button>
+    <button data-fancybox data-modal="true" data-src="#animatedModal2" class="none this2"></button>
     <div class="wrapper-popup none" >
         <div id="animatedModal2" >
-            <div class="popupImg"><img src="img/5.png" alt=""></div>
+            <div class="popupImg"><img src="img/5.webp" alt=""></div>
             <div class="text1">Uau! Seu bónus total é de <span>100%</span> até <span>200 $/€</span> + <span>100 Rodadas Grátis</span>!</div>
             <div class="text2"> Pegue agora e vamos agitar com o Arlekin Casino <span>&#10084;</span></div>
-            <div class="btn btn-2">OBTER BÓNUS</div>
+            <div class="btn btn-2" data-fancybox-close>OBTER BÓNUS</div>
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
-    <script src="js/app.js?v1.1"></script>
+    <script src="js/app.js?v1.2"></script>
 
 </body>
 </html>

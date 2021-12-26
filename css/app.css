@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
+    user-select: none;
   }
   svg * {
     transition: 0.3s;
@@ -57,6 +58,33 @@
     padding: 0;
     list-style: none;
   }
+
+  @font-face {
+    font-family: 'RocknRoll One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fotns/Rock400.woff2) format('woff2');
+    unicode-range: U+21-22, U+27-2a, U+2c-3b, U+3f, U+41-4d, U+4f-5d, U+61-7b, U+7d, U+ab, U+ae, U+b2-b3, U+b7, U+bb, U+c9, U+cd, U+d6, U+d8, U+dc, U+e0-e5, U+e7-ed, U+ef, U+f1-f4, U+f6, U+f8, U+fa, U+fc-fd, U+103, U+14d, U+1b0, U+300-301, U+1ebf, U+1ec7, U+2013-2014, U+201c-201d, U+2039-203a, U+203c, U+2048-2049, U+2113, U+2122, U+65e5, U+6708, U+70b9;
+  }
+
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../fotns/8vIf7wUr0m80wwYf0QCXZzYzUoTK8RZQvRd-D1NYbsWRQk8z-A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../fotns/8vIf7wUr0m80wwYf0QCXZzYzUoTK8RZQvRd-D1NYbsWRQkEz-Eec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
   
   .fon {
       display: flex;
@@ -89,10 +117,14 @@
       margin: auto;
       position: absolute;
   }
+
   .logo {
       display: block;
-      margin-bottom: 20px;
-      margin-bottom: 4vh;
+      margin-bottom: 2vh;
+  }
+
+  .logo img {
+      width: 70%;
   }
   
   .circle-2lv {
@@ -121,22 +153,23 @@
       align-content: center;
       width: 100%;
       left: calc(50% - 37vw / 2);
+      z-index: 5;
   }
   
   img.mon-r {
-      right: 14%;
-      top: calc(17%);
-      max-width: 20vw;
-      width: 100%;
-      z-index: 2;
-  }
+    right: 9%;
+    bottom: calc(-2%);
+    max-width: 39vw;
+    width: 100%;
+    z-index: 2;
+}
   
   img.mon-l {
-      left: 14%;
-      top: calc(46%);
-      max-width: 24vw;
-      width: 100%;
-      z-index: 2;
+    left: 16%;
+    bottom: calc(6%);
+    max-width: 24vw;
+    width: 100%;
+    z-index: 2;
   }
   
   img.mon-r-t {
@@ -171,11 +204,7 @@
     margin-top: 10vh;
     text-align: center;
   }
-  
-  
-  
-  
-  
+    
   canvas#canvas {
       width: 100%;
       height: 100%;
@@ -371,9 +400,14 @@
       margin-right: auto;
       margin-left: auto;
       pointer-events: auto;
+      border: 4px solid #ff2929!important;
   }
   #animatedModal *, #animatedModal2 *{
       font-family: 'RocknRoll One', sans-serif;
+  }
+
+  .fancybox-content {
+      padding: 30px;
   }
 
   .fancybox__container {
@@ -496,6 +530,7 @@
   .popupImg {
       max-width: 350px;
       margin: auto;
+      margin-bottom: 40px;
   }
   
   .logo {
@@ -510,26 +545,23 @@
   
       img.mon-r {
           right: 13%;
-          top: calc(24%);
       }
   
       img.mon-l {
           left: 13%;
-          top: calc(53%);
       }
       
   }
   @media (max-width: 1550px) {
   
       img.mon-r {
-          right: 9%;
-          top: calc(22%);
-          max-width: 22vw;
+        right: 4%;
+        max-width: 40vw;
+        bottom: calc(0%);
       }
   
       img.mon-l {
           left: 9%;
-          top: calc(49%);
           max-width: 27vw;
       }
   }
@@ -552,13 +584,10 @@
   
     img.mon-r {
       right: 6%;
-      top: calc(16%);
-      max-width: 27vw;
     }
   
     img.mon-l {
       left: 6%;
-      top: calc(46%);
       max-width: 32vw;
     }
   }
@@ -566,14 +595,12 @@
   @media (max-width: 1280px) {
   
       img.mon-r {
-          right: 2%;
-          top: calc(22%);
-          max-width: 27vw;
+        right: -2%;
+        max-width: 46vw;
       }
   
       img.mon-l {
-          right: 2%;
-          top: calc(50%);
+          left: 2%;
           max-width: 34vw;
       }
   }
@@ -636,6 +663,11 @@
       #click {
         top: calc(50% - 72px);
       }
+
+      .circle {
+        top: 5%;
+        transform: scale(1.1);
+      }
   }
   
   @media (max-width: 991px) {
@@ -684,6 +716,12 @@
   }
 
   @media (max-width: 768px) {
+
+    .circle {
+        transform: scale(1.1);
+        top: 5%;
+    }
+
     img.mon-b {
         max-width: 72vw;
         left: calc(50% - 37vw / 1.1);
@@ -706,17 +744,10 @@
   
   @media (max-width: 550px) {
   
-      .kakadu {
-          min-width: inherit;
-          max-width: 180px;
-          display: block;
-      }
-  
-
       .circle {
           width: 618px;
           height: 618px;
-          transform: scale(0.6);
+          transform: scale(0.55);
           position: relative;
           top: -14%;
       }
@@ -729,7 +760,7 @@
       }
   
       .logo img {
-          width: 320px
+          width: 280px
       }
   
       .center {
@@ -850,7 +881,8 @@
       }
   
       img#center-logo {
-          left: calc(50% - 81px);
+          left: calc(50% - 86px);
+          top: calc(50% - 114px);
       }
 
       img.mon-r-t {
@@ -879,10 +911,6 @@
           top: 30%;
       }
   
-      .kakadu {
-          max-width: 150px;
-      }
-
       .text1, .text2  {
           font-size: 16px;
       }
@@ -900,23 +928,22 @@
       }
 
       .circle {
-        top: -25%;
+        top: -27%;
       }
 
       img.mon-l {
-        right: 0%;
-        left: 4%;
-        top: calc(68%);
-        max-width: 53vw;
+        left: 15%;
+        top: calc(63%);
+        max-width: 44vw;
         display: block;
       }
 
       img.mon-r {
         display: block;
-        right: 1%;
-        top: calc(58%);
-        max-width: 38vw;
-    }
+        right: -3%;
+        top: calc(59%);
+        max-width: 64vw;
+      }
   }
   
   @media (max-width: 350px) {
@@ -934,18 +961,18 @@
       }
 
       img.mon-l {
-        right: 0%;
-        left: 12%;
-        top: calc(73%);
-        max-width: 40vw;
-    }
+        left: 8%;
+        top: calc(63%);
+        max-width: 48vw;
+        display: block;
+      }
 
       img.mon-r {
         display: block;
-        right: 10%;
-        top: calc(64%);
-        max-width: 30vw;
-    }
+        right: -2%;
+        top: calc(62%);
+        max-width: 64vw;
+      }
   }
 
   @media (max-width: 290px) {
@@ -971,7 +998,7 @@
 
     .circle {
         transform: scale(0.5);
-        top: -16%;
+        top: -18%;
     }
 
     .logo {
@@ -994,8 +1021,8 @@
     }
 
     .circle {
-        transform: scale(0.49);
-        top: -11%;
+        transform: scale(0.45);
+        top: -9%;
     }
 
     .popupImg {
